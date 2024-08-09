@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secondActivity">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow"
+            android:layout_marginStart="28.5dp"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Second Screen"
+            android:fontFamily="@font/bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B6B6B6"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/buttonBack"/>
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Welcome"
+            android:fontFamily="@font/poppins"
+            android:textSize="13sp"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="21dp"/>
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Name User"
+            android:fontFamily="@font/bold"
+            android:layout_below="@id/Welcome"
+            android:textSize="18sp"
+            android:layout_marginStart="21dp"/>
+
+        <TextView
+            android:id="@+id/selectedUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Selected User Name"
+            android:fontFamily="@font/bold"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="11dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/nextSlide"
+            android:layout_width="310dp"
+            android:layout_height="41dp"
+            android:background="@drawable/button_rectangle"
+            android:text="Choose a User"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradientbg">
+
+    <ImageView
+        android:id="@+id/photoProfile"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_add"
+        android:layout_marginTop="142dp"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/photoProfile"
+        android:orientation="vertical"
+        android:layout_marginTop="51dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="310dp"
+            android:layout_height="47dp"
+            android:background="@drawable/rectangle"
+            android:hint="@string/name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.12dp"
+            app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/Palindrome"
+            android:layout_width="310dp"
+            android:layout_height="47dp"
+            android:background="@drawable/rectangle"
+            android:hint="@string/palindrome"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputText"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp">
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="310dp"
+            android:layout_height="41dp"
+            android:background="@drawable/button_rectangle"
+            android:text="CHECK"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="310dp"
+            android:layout_height="41dp"
+            android:background="@drawable/button_rectangle"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
